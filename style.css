@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.home {
+
+  height: 100vh;
+  background: rgb(255,0,0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.home-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:rgb(255,0,0);
+  border-radius: 50% ;
+  border: 25px solid #fff;
+outline: 25px solid rgb(255,0,0);
+}
+.home-img img{
+  mix-blend-mode: multiply; 
+   width: 220 px;
+    position: relative;
+    max-width: 380px;
+    bottom: 15px;
+    border-radius: 20px;
+}
+.home-content {
+  max-width: 600px;
+  color: #fff;
+  margin-right: 400px;
+}
+
+
+.home-content h1{
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke:#fff.5px ;
+  background-image: linear-gradient( #fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position:-500px 0;
+  animation: animatedText 6s linear infinite;
+}
+@keyframes animatedText{
+  0%,95%,100%{
+      background-position: -500px 0;
+  }
+  65%,85%{
+      background-position: 0 0;
+  }
+}
+
+.home-sci{
+    margin: 25px 0 40px;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+text-decoration: none;
+margin-left: 12px;
+transition: .5s;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+}
+.home-sci a:hover{
+    border-color: rgb(255,0,0);
+    background: rgba(0, 0, 0, 0.377);
+    color: #fff ;
+    box-shadow: 0 0  10px  ;
+
+}
+.btn{
+    padding: 12px 35px;
+    background: #fff;
+    border-radius: 40px;
+    font-size: 17px;
+    color: rgb(255,0,0);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    transition: .5s;
+}
+.btn:hover{
+    box-shadow: none;
+}
